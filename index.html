@@ -1,46 +1,30 @@
-create a single HTML file for me```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Display</title>
+    <title>Message</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
             font-family: Arial, sans-serif;
-            font-size: 24px;
-            text-align: center;
         }
+
         .message {
-            width: 100%;
-            padding: 20px;
-        }
-        .soft-pink {
-            background-color: softpink;
-        }
-        .light-green {
-            background-color: lightgreen;
+            color: green;
+            font-size: 32px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div id="message" class="message soft-pink">Tu ab mujhe pyaar nahi karta ❤️ You Don't Love Me Now</div>
 
-    <script>
-        setTimeout(() => {
-            const messageDiv = document.getElementById('message');
-            messageDiv.innerHTML = 'Pagal ho gaya? Main tumse zyada pyaar karta hoon';
-            messageDiv.classList.remove('soft-pink');
-            messageDiv.classList.add('light-green');
-        }, 3000);
-    </script>
+    <div class="message">
+        Tu ab ganda ho gya bukku..!!
+    </div>
+
 </body>
-</html>
-```
